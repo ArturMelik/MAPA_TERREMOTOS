@@ -79,7 +79,7 @@ Inputs y botones que se ajustan al tamaño de la pantalla
 
 Clonar el repositorio:
 
-git clone 
+git clone : https://github.com/ArturMelik/MAPA_TERREMOTOS.git
 
 
 Abrir index.html en un navegador moderno.
