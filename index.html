@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1127/1127839.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <title>Mapa Terremoto</title>
+</head>
+
+<body>
+    
+<nav>
+    
+
+
+    <a href="#primerTitulo">Primer Mapa</a>
+    <a href="#segundoTitulo">Segundo Mapa </a>
+    <a href="#tercerTitulo"> Login</a>
+</nav>
+
+    
+
+    
+    <h1 id="primerTitulo">Ultimos Terremotos Hoy</h1>
+
+
+
+    <div id="filter-buttons">
+    <button id="limpiar-cache" type="button">Limpiar Caché</button>    
+    <button id="btn-api">Terremotos</button>
+    <button id="btn-favorites">Mis Favoritos</button>
+    </div>
+    
+    <div id="map"></div>
+    
+    
+    <h1 id="segundoTitulo">Mapa Filtrado por Magnitud y Fecha</h1>
+
+    
+    <label for="minMag">Magnitud mínima:</label>
+    <input type="number" id="minMag" step="0.1" value="0">
+    <label for="startDate">Fecha inicio:</label>
+    <input type="date" id="startDate">
+    <label for="endDate">Fecha fin:</label>
+    <input type="date" id="endDate">
+    <button id="filterBtn">Filtrar</button>
+    
+    <div id="mapFiltered"></div>
+    
+    <section>
+        <h2 id="tercerTitulo">Formulario Registro</h2>
+            <div id="forms-container">
+                <div>
+                    <h3>Formulario de Registro</h3>
+                    <form id="form1" action="#" method="POST">
+                        <div>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Introduce email..."><br>
+                            <label for="pass">Password:</label><br>
+                            <input type="password" id="pass" name="pass" placeholder="Introduce password..."><br>
+                            <label for="pass2">Repite password:</label><br>
+                            <input type="password" id="pass2" name="pass2" placeholder="Repite password..."><br><br>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+    
+                <div>
+                    <h3>Formulario de Login</h3>
+                    <form id="form2" action="#" method="POST">
+                        <div>
+                            <label for="email2">Email:</label><br>
+                            <input type="email" id="email2" name="email2" placeholder="Introduce email..."><br>
+                            <label for="pass3">Password:</label><br>
+                            <input type="password" id="pass3" name="pass3" placeholder="Introduce password..."><br>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+    
+                </div>
+                <div>
+                    <h3>Logout</h3>
+                    <div id="logout">
+                        <p id="message"></p>
+                        <button id="salir">Logout</button>
+                    </div>
+    
+                </div>
+            </div>
+    
+    </section>
+
+
+
+    <footer>
+        
+
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

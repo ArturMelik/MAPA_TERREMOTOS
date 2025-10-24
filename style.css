@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 350px;
+  background: #0b3d91 0%,
+                #1e5fa8 35%,
+                #3da5f5 65%,
+                #a8e6cf 85%,
+                #ffffff 95%,
+                #000000 200%;
+  display: flex;
+  justify-content: flex-end; 
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+nav a {
+  margin: 0 20px 0 0;
+  color: black;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 600;}
+
+nav a:hover {
+  color: #ffd700; 
+  transform: translateY(-2px);
+}
+
+#map {
+    max-width: 100%;
+    height: 500px;          
+    overflow: hidden;       
+    border: 5px solid #fff; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    margin: 20px auto;    
+}
+
+#mapFiltered {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    height: 500px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 
+        0 0 30px rgba(0, 150, 255, 0.4),
+        0 0 60px rgba(0, 100, 200, 0.3),
+        0 0 100px rgba(0, 50, 150, 0.2),
+        inset 0 0 50px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 30% 30%, 
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 50%);
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%, 
+                #0b3d91 0%,
+                #1e5fa8 35%,
+                #3da5f5 65%,
+                #a8e6cf 85%,
+                #ffffff 95%,
+                #000000 200%);
+}
+
+input[type="number"],
+input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 8px;       
+    border: 2px solid #4da6ff; 
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #ff9933;    
+    outline: none;             
+}
+
+button#filterBtn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4da6ff; 
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button#filterBtn:hover {
+    background-color: #3399ff; 
+}
+
+section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+#forms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+#forms-container > div {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#forms-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    background: white;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input[type="submit"],
+button {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+input[type="submit"]:active,
+button:active {
+    transform: scale(0.98);
+}
+
+#logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#message {
+    color: #555;
+    font-size: 0.95rem;
+    text-align: center;
+    min-height: 20px;
+}
+
+#salir {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+#salir:hover {
+    box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+} 
+
+#filter-buttons{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#btn-api{
+    margin-left: 20px;
+}
+
+#btn-favorites{
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+
+    /* Navegación */
+    nav {
+        width: 100%; /* Ocupa todo el ancho */
+        max-width: 100%; /* Elimina el límite de ancho */
+        justify-content: center; /* Centra los enlaces */
+        padding: 10px 0; /* Un poco de padding vertical */
+    }
+
+    nav a {
+        margin: 0 10px; /* Reduce el margen entre enlaces */
+        font-size: 0.9rem; /* Texto un poco más pequeño */
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 1.8rem; /* Reduce el tamaño del h1 */
+        margin-top: 70px; /* Añade espacio para que no tape la nav fija */
+    }
+
+    section h2 {
+        font-size: 1.8rem; /* Reduce el tamaño del h2 */
+        margin-bottom: 30px;
+    }
+
+    /* Mapas */
+    #map, #mapFiltered {
+        height: 300px; /* Altura más adecuada para móviles */
+    }
+
+    /* Contenedor de formularios */
+    #forms-container > div {
+        padding: 25px 20px; /* Reduce el padding interno */
+    }
+
+    /* Botones de filtro */
+    #filter-buttons {
+        justify-content: center; /* Centra los botones */
+        flex-wrap: wrap; /* Permite que bajen de línea si no caben */
+    }
+
+    #filter-buttons > * { 
+        margin: 5px;
+    }
+
+}
+
+/* Tus media queries originales para tamaños más grandes */
+@media (min-width: 480px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    font-size: 21px;
+  }
+}
