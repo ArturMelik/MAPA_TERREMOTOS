@@ -3,22 +3,21 @@
 Aplicación web interactiva que permite explorar terremotos en tiempo real mediante mapas dinámicos, con funcionalidades de filtrado, favoritos y autenticación de usuarios.
 
 
-🔹 Funcionalidades principales
 1️⃣ Mapa de terremotos en tiempo real
 
 • Muestra la ubicación de terremotos usando la Earthquake API.
 
-   • Cada marcador incluye un popup con:
+• Cada marcador incluye un popup con:
 
-      • 📌 Título del evento
+    • 📌 Título del evento
 
-      • 🕒 Fecha y hora
+    • 🕒 Fecha y hora
 
-      • 🌎 Ubicación
+    • 🌎 Ubicación
 
-      • 🔢 Código del evento
+    • 🔢 Código del evento
 
-      • 📊 Magnitud (con tipo de medida)
+    • 📊 Magnitud (con tipo de medida)
 
 • Colores de los marcadores según la magnitud (0–7) para fácil visualización.
 
