@@ -9,15 +9,15 @@ Muestra la ubicación de terremotos usando la API de Earthquake.
 
 Cada marcador incluye un popup con:
 
-📌 Título del evento
+    📌 Título del evento
 
-🕒 Fecha y hora
+    🕒 Fecha y hora
 
-🌎 Ubicación
+    🌎 Ubicación
 
-🔢 Código del evento
+    🔢 Código del evento
 
-📊 Magnitud (con tipo de medida)
+    📊 Magnitud (con tipo de medida)
 
 Colores de los marcadores según la magnitud (0–7) para fácil visualización.
 
@@ -27,59 +27,59 @@ Interactividad completa: zoom, desplazamiento y popups informativos.
 
 Filtrado dinámico de terremotos por:
 
-🎚 Magnitud
+    🎚 Magnitud
 
-📅 Fecha de inicio y fin
+    📅 Fecha de inicio y fin
 
 Los filtros actualizan el mapa en tiempo real mostrando solo los terremotos que cumplen los criterios.
 
 3️⃣ Favoritos con Firebase Firestore
 
-Guardar terremotos como favoritos directamente desde el popup: ⭐
+    Guardar terremotos como favoritos directamente desde el popup: ⭐
 
-Evita duplicados en la base de datos.
+    Evita duplicados en la base de datos.
 
 Botones de filtro para alternar entre:
 
-🌐 Todos los terremotos de la API
+    🌐 Todos los terremotos de la API
 
-💖 Favoritos del usuario
+    💖 Favoritos del usuario
 
 Eliminar favoritos con un clic desde la vista de favoritos.
 
 4️⃣ Autenticación con Firebase Auth
 
-Solo los usuarios registrados pueden guardar y gestionar favoritos. 🔒
+    Solo los usuarios registrados pueden guardar y gestionar favoritos. 🔒
 
-Cada usuario ve solo sus propios favoritos.
+    Cada usuario ve solo sus propios favoritos.
 
-Login rápido con correo y contraseña mediante Firebase.
+    Login rápido con correo y contraseña mediante Firebase.
 
-🛠 Tecnologías utilizadas
+    🛠 Tecnologías utilizadas
 
-Frontend: HTML, CSS, JavaScript
+    Frontend: HTML, CSS, JavaScript
 
-Mapas: Leaflet.js
+    Mapas: Leaflet.js
 
-API: Earthquake API (datos de terremotos en tiempo real)
+    API: Earthquake API (datos de terremotos en tiempo real)
 
-Base de datos: Firebase Firestore
+    Base de datos: Firebase Firestore
 
-Autenticación: Firebase Auth
+    Autenticación: Firebase Auth
 
 📱 Diseño responsive
 
-Optimizado para móviles, tablets y escritorio
+    Optimizado para móviles, tablets y escritorio
 
-Grid de formularios adaptable y mapas que escalan automáticamente
+    Grid de formularios adaptable y mapas que escalan automáticamente
 
-Inputs y botones que se ajustan al tamaño de la pantalla
+    Inputs y botones que se ajustan al tamaño de la pantalla
 
 🚀 Cómo usar el proyecto
 
-Clonar el repositorio:
+        Clonar el repositorio:
 
-git clone : https://github.com/ArturMelik/MAPA_TERREMOTOS.git
+        git clone : https://github.com/ArturMelik/MAPA_TERREMOTOS.git
 
 
 Abrir index.html en un navegador moderno.
