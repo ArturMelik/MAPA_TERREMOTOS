@@ -718,6 +718,4 @@ function limpiarFormulario() {
 document.addEventListener("DOMContentLoaded", () => {
   cargarFormulario();
 
-  const btnLimpiar = document.getElementById("limpiar-cache");
-  if (btnLimpiar) btnLimpiar.addEventListener("click", limpiarFormulario);
 });
